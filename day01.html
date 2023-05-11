@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{msg}}</h1>
+    </div>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script>
+        //创建一个Vue实例，虚拟dom 对象 =》
+        //语法糖：{{}} 渲染模板：渲染数据
+        new Vue({
+            el: '#app',//挂载点:要挂载的元素
+            data() {//存放数据的地方
+                return {
+                    msg: ''
+                }
+            },
+            methods: {
+                //写方法，以及事件方法。也可以做计算
+            },
+            //计算属性：拿来计算
+            computed: {
+            }
+        })
+    </script>
+</body>
+
+</html>

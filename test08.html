@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+    v-bind指令:<input type="text" :value="name"><br>
+    v-model指令:<input type="text" v-model="name2"><br>
+    消息1:<input type="text" :value="msg"><br>
+    消息2:<input type="text" v-model="msg">
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                name:'zhangsan',
+                name2:'wangwu',
+                url:'https://wwww.baidu.com',
+                msg:'sdw'
+            }
+        })
+    </script>
+</body>
+</html>

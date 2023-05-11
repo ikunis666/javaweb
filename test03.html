@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{msg}}</h1>
+        <h1>{{name}}</h1>
+    </div>
+    <!-- vue程序 
+    只有一个根节点
+        el可以配置
+-->
+    
+    <script>
+        new Vue({
+        //     template :`
+        //     <div>
+             
+                
+        // </div>
+        //     `,
+            data:{
+                msg:'Hello Vue!!',
+                name:'a动力节点老杜'
+            },
+            el:'#app'
+        })
+    </script>
+</body>
+</html>

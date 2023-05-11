@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <!-- 第一步
+    创建vue实例 -->
+    <script>
+        const myVue=new Vue({
+            template:'<h1>hello {{name}}vue!</h1>',
+            data: {
+                name:"看",
+                releaseTime:'2023年1月23日'
+        }
+        }).$mount('#app')
+    </script>
+</div>
+    
+    
+</body>
+</html>
