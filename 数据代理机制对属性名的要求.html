@@ -15,28 +15,10 @@
         const vm = new Vue({
             el: '#app',
             data: {
-                msg:'hello vue',
-                _name:'zhangsan',
-                $age:20
+                msg:'hello world',
+                
             }
         })
-        let target={
-            name:'张三'
-        }
-        let proxy={}
-        Object.defineProperty(proxy,'name',{
-            get (){
-                console.log('get');
-                
-                return target.name
-            },
-            set (val){
-                console.log('set');
-                
-target.name=val
-            }
-        })
-   
     </script>
 </body>
 </html>
